@@ -1,19 +1,9 @@
 name: dockerx
 
 on:
-  pull_request:
-    branches: master
-    paths:
-      -
-        '**'
   push:
     branches: master
     tags:
-    paths:
-      -
-        '**'
-  repository_dispatch:
-    types: [rebuild_dockerx]
 
 jobs:
   buildx:
